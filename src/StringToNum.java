@@ -17,7 +17,6 @@ class StringToNum {
                 tmp += x;
                 for(int i = 0; i<numArray.length; i++){
                     if(numTostr[i].equals(tmp)){
-
                         s+= numArray[i];
                         tmp ="";
                     }
