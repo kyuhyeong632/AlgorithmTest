@@ -4,7 +4,7 @@ public class Main {
         Main T = new Main();
         Scanner kb = new Scanner(System.in);
         String str = kb.next();
-        System.out.print(str);
+        System.out.print(str)  ;
     }*/
 
     /*String to Num Main*/
