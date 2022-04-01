@@ -1,5 +1,6 @@
 public class Primenumber {
-/* 만들어지는 소수의 갯수 확인 */
+/* 만들어지는 소수의 갯수 확인
+*  풀이하기 */
     public int solution(String numbers){
         int answer = 0;
         int[] numArr = new int[numbers.length()];
