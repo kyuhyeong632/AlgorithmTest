@@ -1,5 +1,6 @@
 import java.util.*;
 public class NumArrTest {
+    /* 나누어 떨어지지 않는 숫자 찾기 */
     public int[] solution(int[] arr, int divisor) {
         int[] answer = {};
         ArrayList<Integer> intList = new ArrayList<Integer>();
