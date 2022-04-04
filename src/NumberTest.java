@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class NumberTest {
-
+/* 없는 숫자의 합 */
     public int solution(int[] numbers){
         int answer = 0;
 
