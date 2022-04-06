@@ -18,6 +18,7 @@ public class Main {
         FindKimInSeoul STN = new FindKimInSeoul();
         String[] seoul = {"Jeong", "Seo", "Ha", "Lee", "Kim", "Yoon"};
         System.out.print(STN.findKimInSeoul(seoul));
+
     }
 
 
