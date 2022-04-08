@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Lottowin {
-/* 마무리 하기 */
+/* 마무리 하기 test case 오류 잡기 */
     public int[] solution(int[] lottos, int[] win_nums) {
         int[] answer = new int[2];
         int zeroCount = 0;
