@@ -1,5 +1,8 @@
 public class LottoTest {
     public int[] solution(){
+        /*
+        * 13 23 24 5 44 35
+         * */
         int[] numArr = new int[6];
 
         for(int i = 0; i<numArr.length; i++){
