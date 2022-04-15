@@ -1,7 +1,11 @@
+import java.util.Arrays;
+
 public class LottoTest {
     public int[] solution(){
         /*
         * 13 23 24 5 44 35
+        * 5 17 10 22 14 29
+        * 2 7 23 29 33 43
          * */
         int[] numArr = new int[6];
 
@@ -12,7 +16,7 @@ public class LottoTest {
             numArr[i] = number;
 
         }
-
+        Arrays.sort(numArr);
         return numArr;
     }
 
