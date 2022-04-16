@@ -6,6 +6,7 @@ public class LottoTest {
         * 13 23 24 5 44 35
         * 5 17 10 22 14 29
         * 2 7 23 29 33 43
+        * 14 15 17 21 26 40
          * */
         int[] numArr = new int[6];
 
