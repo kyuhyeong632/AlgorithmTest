@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
-/* 마라톤에서 완주하지 못한 참가자 찾기 _ 미완성 */
+/* 마라톤에서 완주하지 못한 참가자 찾기 _ 미완성 220420 */
 public class Marathon {
 
     public String solution(String[] participant, String[] completion){
