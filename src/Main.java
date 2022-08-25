@@ -1,25 +1,44 @@
 import java.util.*;
-public class Main {
-    /*public static void main(String[] args){
-        Main T = new Main();
-        Scanner kb = new Scanner(System.in);
-        String str = kb.next();
-        System.out.print(str)  ;
-    }*/
 
-    /*String to Num Main
-    public static void main(String[] args){
-        StringToNum STN = new StringToNum();
-        System.out.print(STN.solution("12onezero"));
-    }*/
+class Node{
+    int data;
+    Node lt, rt;
+    public Node(int val){
+        data = val;
+        lt=rt= null;
+    }
+}
+public class Main{
+    Node root;
+    public void DFS(Node root){
+        if(root == null){
+            return;
+        }else{
 
-    /* Finding Kim Seobang in Seoul */
+            DFS(root.lt);
+            DFS(root.rt);
+            System.out.print(root.data + " ");
+        }
+
+    }
+
     public static void main(String[] args){
-        FindKimInSeoul STN = new FindKimInSeoul();
-        String[] seoul = {"Jeong", "Seo", "Ha", "Lee", "Kim", "Yoon"};
-        System.out.print(STN.findKimInSeoul(seoul));
+        Main tree = new Main();
+        tree.root = new Node(1);
+        tree.root.lt = new Node(2);
+        tree.root.rt = new Node(3);
+        tree.root.lt.lt = new Node(4);
+        tree.root.lt.rt = new Node(5);
+        tree.root.rt.lt = new Node(6);
+        tree.root.rt.rt = new Node(7);
+
+        tree.DFS(tree.root);
+
+
+
 
     }
 
 
 }
+
