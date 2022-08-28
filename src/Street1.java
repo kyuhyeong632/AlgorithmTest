@@ -20,6 +20,12 @@ public class Street1 {
             }
 
         }
+
+        int answer = 0;
+
+        String str = Integer.toString(answer);
+        str.length();
+
         return N;
 
 

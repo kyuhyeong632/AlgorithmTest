@@ -27,7 +27,9 @@ public class LottoTest {
 
     public static void main(String[] args) {
         LottoTest obj = new LottoTest();
-
+        String str = "helle";
+        String[] strArr = new String[2];
+        str.length();
         int[] lottoNum = obj.solution();
 
         for(int i = 0; i<lottoNum.length; i++){
