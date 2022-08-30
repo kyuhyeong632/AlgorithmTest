@@ -1,22 +1,26 @@
 public class Prefix {
 
     public String solution(String[] strs){
-        String answer = "";
 
-        String ptCheck = strs[0];
-        String[] pattern = new String[ptCheck.length()];
-        String tmp = "";
-        for(int i = 0; i< ptCheck.length(); i++){
-            tmp = tmp + ptCheck.charAt(i);
-            pattern[i] = tmp;
-            System.out.println("i = " + tmp);
+
+        StringBuilder sb = new StringBuilder();
+
+        int mini = 201;
+
+        for(String str : strs){
+            mini = Math.min(mini, str.length());
+
+            for(int i = 0; i<mini; i++){
+                char ch = str.charAt(i);
+                for(int j = 1; j< strs.length; j++){
+                    if(ch != strs[j].charAt(i)){
+                        return sb.toString();
+                    }
+                }
+                sb.append(ch);
+            }
         }
-
-        for(int i = 0; i<strs.length; i++){
-
-        }
-
-        return answer;
+        return sb.toString();
     }
 
     public static void main(String[] args) {
