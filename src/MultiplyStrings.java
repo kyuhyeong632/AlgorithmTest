@@ -7,7 +7,7 @@ public class MultiplyStrings {
         int b = num2.length();
 
         int[] pos = new int[a+b];
-
+        /* 로직 확인하기 */
         for(int i = a-1; i >= 0; i-- ){
             for(int j = b-1; j>= 0; j--){
                 int multi  = (Character.getNumericValue(num1.charAt(i)) * Character.getNumericValue(num2.charAt(j)));
